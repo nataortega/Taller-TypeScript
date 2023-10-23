@@ -1,6 +1,7 @@
 import { series } from "./data.js";
 console.log("Este es el taller 1 de TS de DSW en equipos");
 var contenidoTabla = document.getElementById("contenido");
+var imagenCard = document.getElementById("image-info");
 var titleCard = document.getElementById("title-info");
 var textCard = document.getElementById("text-info");
 var linkCard = document.getElementById("card-link");
@@ -13,6 +14,7 @@ function constuirBotones() {
         var button = document.getElementById("button-".concat(i));
         button.onclick = function () {
             console.log(serie.name);
+            imagenCard.setAttribute("src", serie.image_link);
             titleCard.innerText = serie.name;
             textCard.innerText = serie.description;
             linkCard.innerText = serie.link;

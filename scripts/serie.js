@@ -9,6 +9,7 @@ var Serie = /** @class */ (function () {
         this.platform = platform;
         this.link = link;
         this.description = description;
+        this.image_link = image_link;
     }
     return Serie;
 }());

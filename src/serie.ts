@@ -9,5 +9,6 @@ export class Serie {
       public platform: string,
       public link: string,
       public description: string,
+      public image_link: string
     ) {}
   }
